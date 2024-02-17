@@ -1,0 +1,1470 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Outfit', sans-serif;
+}
+
+
+
+
+
+
+
+
+/* --------------------------------------------------------------------------- MAIN FUTBOL ---------------------------------------------------------------------------- */
+
+
+
+/* Tabla de posiciones */
+
+
+.titulo_posiciones {
+    color: white;
+    background-color: #79263a;
+    border-radius: 5px;
+    padding-inline: 10px;
+    padding-block: 2px;
+}
+
+.posiciones {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    
+}
+
+
+.tabla_posiciones {
+    max-width: 800px;
+    margin: 80px auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #57c2d6;
+    color: #fff;
+}
+
+
+.primero {
+    background-color: rgb(14, 177, 14);
+}
+
+.segundo {
+    background-color: rgb(124, 231, 124);
+}
+
+.anteultimo {
+    background-color: rgb(228, 74, 74) ;
+}
+
+.ultimo {
+    background-color: rgb(228, 74, 74) ;
+}
+
+
+
+/* Resultados */
+
+
+.fondo_resultado {
+    background-color: #79263a;
+    padding-bottom: 50px;
+}
+
+.titulo_fixture {
+    color: white;
+    background-color: #57c2d6;
+    border-radius: 5px;
+    padding-inline: 10px;
+    padding-block: 2px;
+}
+
+.fixture {
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+    
+}
+
+.container_resultados {
+    max-width: 800px;
+    margin: 70px auto;
+  }
+
+.resultados {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+  .resultados th, .resultados td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+  .resultados th {
+    background-color: #57c2d6;
+    color: #fff;
+}
+
+
+/* Plantel profesional */
+
+
+.plantel {
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+    
+}
+
+.titulo_plantel {
+    color: white;
+    background-color: #79263a;
+    border-radius: 5px;
+    padding-inline: 10px;
+    padding-block: 2px;
+
+}
+
+.jugadores1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 65px;
+    padding-top: 100px;
+    padding-bottom: 100px
+
+}
+
+.player-card {
+  color: white;
+  background-color: #792639e8;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  padding-bottom: 15px;
+  text-align: center;
+  width: 300px; 
+}
+
+.player-card img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.player-card h2 {
+  margin-bottom: 10px;
+}
+
+.player-card p {
+  margin: 5px 0;
+}
+
+.jugadores2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 65px;
+    padding-bottom: 100px
+
+}
+
+.jugadores3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 65px;
+    padding-bottom: 100px
+
+}
+
+
+/* multimedia */ 
+
+
+.multimedia_seccion {
+    background-color: #57c2d6;
+}
+
+.multimedia {
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+  
+}
+
+.titulo_multimedia {
+    color: white;
+    background-color: #79263a;
+    border-radius: 5px;
+    padding-inline: 10px;
+    padding-block: 2px;
+}
+
+.videos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.titulo_videos {
+    color: white;
+    font-size: 24px;
+    text-decoration: underline solid 3px ;
+}
+
+
+.frames {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.sigma {
+    border-radius: 10px;
+    border: solid 5px #79263a;
+}
+
+.malvinas {
+    border-radius: 10px;
+    border: solid 5px #79263a;
+}
+
+.fotos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.titulo_fotos {
+    color: white;
+    font-size: 24px;
+    text-decoration: underline solid 3px ;
+}
+
+
+.multimedia_fotos {
+    display: grid;
+    place-items: center;
+    margin-top: 100px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: 
+    "caja1 caja2 caja3"
+    "caja4 caja5 caja6"
+    "caja7 caja8 caja9";
+    gap: 14px 20px;
+    margin-inline: 240px;
+    padding-bottom: 70px;
+}
+
+.caja1 {
+    grid-area: caja1;
+}
+
+.caja2 {
+    grid-area: caja2;
+}
+
+.caja3 {
+    grid-area: caja3;
+}
+
+.caja4 {
+    grid-area: caja4;
+}
+
+.caja5 {
+    grid-area: caja5;
+}
+
+.caja6 {
+    grid-area: caja6;
+}
+
+.caja7 {
+    grid-area: caja7;
+}
+
+.caja8 {
+    grid-area: caja8;
+}
+
+.caja9 {
+    grid-area: caja9;
+}
+
+
+.foto_futbol {
+    width: 100%;
+  
+}
+
+.cierre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cierre_img {
+    width: 130px;
+    padding-block: 30px;
+}
+
+
+
+
+/* --------------------------------------------------------------------------- MAIN TIENDA ---------------------------------------------------------------------------- */
+
+
+.tienda {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-block: 50px;
+}
+
+.titulo_tienda {
+    font-size: 40px;
+    color: #79263a;
+    padding: 10px 20px;
+    font-weight: 700;
+    
+}
+
+.camisetas {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.titulo_camisetas {
+    color: white;
+    background-color: #57c2d6;
+    border-radius: 5px;
+    padding-inline: 10px;
+    font-size: 30px;
+}
+
+
+.pantalones {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.titulo_pantalones {
+    color: white;
+    background-color: #57c2d6;
+    border-radius: 5px;
+    padding-inline: 10px;
+    padding-block: 5px;
+    font-size: 30px;
+}
+
+
+.abrigo {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.titulo_abrigo {
+    color: white;
+    background-color: #57c2d6;
+    border-radius: 5px;
+    padding-inline: 10px;
+    padding-block: 5px;
+    font-size: 30px;
+}
+
+
+
+.accesorios {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+
+.titulo_accesorios {
+    color: white;
+    background-color: #57c2d6;
+    border-radius: 5px;
+    padding-inline: 10px;
+    padding-block: 5px;
+    font-size: 30px;
+}
+
+
+/* --------------------------------------------------------------------------- MAIN SOCIOS ---------------------------------------------------------------------------- */
+
+
+/* Asociarse */
+
+
+.socios {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 80px;
+}
+
+.titulo_socios {
+    color: #79263a;
+    font-weight: 700;
+    font-size: 34px;
+}
+
+.subtitulo_socios {
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+
+.formulario {
+    margin-top: 50px;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button:hover {
+    background-color: #2d94a3;
+}
+
+.sexo {
+    display: flex;
+    flex-direction: column;
+}
+
+.sexo select {
+padding: 10px;
+}
+
+.espaciado_form {
+    margin-block: 15px;
+}
+
+.botones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-block: 30px;
+}
+
+.boton_enviar {
+background-color: #57c2d6;
+color: white;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+}
+
+.boton_borrar {
+    background-color: transparent;
+    color: #57c2d6;
+    padding: 10px 20px;
+    border: #57c2d6 solid 1px;
+    border-radius: 5px;
+}
+
+
+/* Información para socios */
+
+
+.fondo_info {
+    background-color: #792639c0;
+    padding-bottom: 100px;
+}
+
+
+.info_socios {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 70px;
+    padding-top: 50px;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    margin-top: 40px;
+    color: white;
+    padding-bottom: 80px;
+}
+
+.beneficios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding-inline: 300px;
+    color: white;
+    gap: 20px;
+}
+
+.importante  {
+    display: flex;
+}
+
+.titulo_importante  {
+    background-color: #57c2d6;
+    padding-inline: 10px;
+    border-radius: 5px;
+    margin-bottom: 40px;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+
+.categoria {
+    margin-top: 30px;
+}
+
+.beneficios h3 {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.beneficios h4 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.beneficios p {
+    font-size: 20px;
+}
+
+
+/* Contactos */
+
+
+.contacto {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form {
+    text-align: left;
+}
+
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #57c2d6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.contactos {
+    padding-block: 80px;
+}
+
+.form_contacto {
+    margin-top: 50px;
+}
+
+
+/* --------------------------------------------------------------------------- MAIN CLUB ---------------------------------------------------------------------------- */
+
+/* Historia club */
+
+.historia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-inline: 300px;
+    color: white;
+    padding-top: 80px;
+    background-color: #792639c0;
+}
+
+.historia h2 {
+    margin-bottom: 60px;
+    font-size: 36px;
+    font-weight: 600;
+    color: white;
+    white-space: nowrap;
+    background-color: #57c2d6;
+    padding-inline: 10px;
+    border-radius: 5px;
+}
+
+.imagenes_club {
+    display: flex;
+    gap: 15px;
+    overflow-x: scroll;
+    width: 100%;
+    white-space: nowrap;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: thin;
+    border: #57c2d6 3px solid;
+}
+
+
+.imagenes_club img {
+    height: 500px;
+}
+
+.historia p {
+    margin-top: 50px;
+    font-size: 18px;
+    font-weight: 200;
+    padding-bottom: 50px;
+}
+
+
+/* Autoridades */
+
+.autoridades1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-inline: 300px;
+    color: black;
+    margin-top: 80px;
+    gap: 16%;
+    padding-bottom: 50px;
+}
+
+.autoridades h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #79263a;
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    margin-top: 80px;
+    white-space: nowrap;
+}
+
+.autoridades1 img {
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.342);
+}
+
+.vice {
+    height: 450px;
+}
+
+.secretario {
+    height: 450px;
+}
+
+.autoridades1 h3 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 20px;
+    color: #79263a;
+}
+
+.autoridades1 h4 {
+    font-weight: 300;
+}
+
+
+/* Sedes */
+
+
+.sedes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 300px;
+    color: white;
+    padding-top: 80px;
+    background-color: #792639c0;
+}
+
+.sedes h2 {
+    margin-bottom: 40px;
+    font-size: 36px;
+    font-weight: 600;
+    color: white;
+    background-color: #57c2d6;
+    padding-inline: 10px;
+    border-radius: 5px;
+}
+
+
+.sedes1 img {
+    width: 800px;
+    margin-top: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.342);
+}
+
+
+
+.sedes1 h3 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.sedes1 p {
+    margin-bottom: 60px;
+}
+
+
+
+/* --------------------------------------------------------------------------- FOOTER ---------------------------------------------------------------------------- */
+
+
+
+footer {
+    background-color: #57c2d6;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.container2 {
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    gap: 200PX;
+}
+
+.footer-section {
+    width: 100%;
+    padding: 20px;
+}
+
+.enlaces1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer_items {
+    margin-left: -30px;
+}
+
+.footer-section ul li a:hover {
+    color: #79263a;
+}
+
+.footer-section h2 {
+    margin-bottom: 20px;
+}
+
+.footer-section ul li {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+.footer-section .footer-contact {
+    width: 40%;
+}
+
+.footer-section .footer-contact p {
+    line-height: 1.8;
+    color: #aaa;
+}
+
+.footer-section .footer-contact i {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+
+.footer-bottom {
+    background-color: #57c2d6;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #fff;
+}
+
+.social_links a {
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: #219eb4;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: white;
+    transition: all .5s ease;
+}
+
+.social_links a:hover  {
+    background-color: #79263a;
+}
+
+
+@media screen and (min-width:1025px) and (max-width: 1600px){
+
+/* INDEX */    
+
+.estadisticas {
+    flex-direction: column;
+    align-items: center;
+}
+
+.proximo_partido h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ultimo_resultado h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.posiciones_portada h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ultimo_resultado {
+    margin-top: -30px;
+}
+
+.posiciones_portada {
+    margin-top: -30px;
+}
+
+/* CLUB */
+
+.historia {
+    padding: 50px;
+}
+    
+.historia h2 {
+    margin-top: 80px;
+}
+
+.historia img {
+    display: flex;
+    align-items: center;
+    width: 550px;
+}
+
+/* FUTBOL */
+
+.jugadores1 {
+    margin-inline: 15px;
+}
+
+.jugadores2 {
+    margin-inline: 15px;
+}
+
+.jugadores3 {
+    margin-inline: 15px;
+}
+
+.videos {
+    margin-top: 50px;
+}
+
+
+.frames {
+    margin-top: 50px;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.sigma {
+    width: 450px;
+}
+
+.malvinas {
+    width: 450px;
+}
+
+.fotos {
+    margin-top: 50px;
+}
+
+
+.multimedia_fotos {
+    grid-template-columns: repeat(1,1fr);
+    margin-inline: 10px;
+    margin-top: 50px;
+    margin-right: 30px;
+}
+
+
+/* SOCIOS */
+
+.beneficios {
+    padding: 15px;
+}
+
+.importante {
+    display: flex;
+    justify-content: center;
+}
+
+.beneficios h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.info_socios {
+    font-size: 36px;
+}
+
+.categoria {
+    margin-top: 30px;
+    padding-inline: 50px;
+}
+
+
+
+
+
+}
+
+@media screen and (min-width:481px) and (max-width: 1024px){
+
+
+
+/* FOOTER */
+.container2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.enlaces1 {
+    flex-direction: row;
+    gap: 50px;
+}
+
+.footer_items {
+    font-size: 24px;
+}
+
+.footer-contact {
+    margin-top: -150px;
+    
+}
+
+.footer-social {
+    margin-top: -150px;
+}
+
+
+
+/* INDEX */
+
+
+
+.estadisticas {
+    flex-direction: column;
+    align-items: center;
+}
+
+.proximo_partido h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ultimo_resultado h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.posiciones_portada h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ultimo_resultado {
+    margin-top: -30px;
+}
+
+.posiciones_portada {
+    margin-top: -30px;
+}
+
+/* CLUB */
+
+.historia {
+    padding: 50px;
+}
+    
+.historia h2 {
+    margin-top: 80px;
+}
+
+.historia img {
+    display: flex;
+    align-items: center;
+    width: 550px;
+}
+
+.autoridades1 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 0px;
+    gap: 50px;
+}
+
+.sedes {
+    padding-inline: 50px;
+}
+
+.sedes1 img {
+    width: 460px;
+}
+
+/* FÚTBOL */
+
+/* tablas */
+
+th, td {
+    font-size: 12px;
+    padding: 10px;
+}
+
+.tabla_posiciones {
+    max-width: 100%;
+    margin-inline: 25px;
+    overflow-x: auto;
+}
+
+.container_resultados {
+    max-width: 95%;
+    overflow-x: auto;
+}
+
+.jugadores1 {
+    flex-direction: column;
+}
+
+.jugadores2 {
+    flex-direction: column;
+    margin-top: -35px;
+}
+
+.jugadores3 {
+    flex-direction: column;
+    margin-top: -35px;
+}
+
+/* Multimedia */
+
+.videos {
+    margin-top: 50px;
+}
+
+
+.frames {
+    margin-top: 50px;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.sigma {
+    width: 450px;
+}
+
+.malvinas {
+    width: 450px;
+}
+
+.fotos {
+    margin-top: 50px;
+}
+
+
+.multimedia_fotos {
+    grid-template-columns: repeat(1,1fr);
+    margin-inline: 10px;
+    margin-top: 50px;
+    margin-right: 30px;
+}
+
+/* SCOCIOS */
+
+.beneficios {
+    padding: 15px;
+}
+
+.importante {
+    display: flex;
+    justify-content: center;
+}
+
+.beneficios h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.info_socios {
+    font-size: 36px;
+}
+
+.categoria {
+    margin-top: 30px;
+    padding-inline: 50px;
+}
+
+    
+}
+
+@media screen and (max-width: 480px){
+
+
+/* FOOTER */    
+
+.container2 {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  justify-content: center;
+} 
+
+.enlaces1 {
+  display: inline-block;
+}
+
+.footer_items {
+    margin-left: 5px;
+}
+
+
+/* MAIN SOCIOS */
+
+.beneficios {
+    padding: 15px;
+}
+
+.titulo_importante {
+    margin-left: 123px;
+}
+
+.beneficios h3 {
+    margin-left: 66px;
+}
+
+.info_socios {
+    font-size: 36px;
+}
+
+
+/*MAIN INDEX*/
+
+.imagen2 img {
+    width: 450px;
+}
+
+.texto_portada {
+    padding-left: 10px;
+    top:82%
+}
+
+.texto1 {
+    font-size: 30px;
+    padding-inline: 10px;
+}
+
+.texto2 {
+    font-size: 30px;
+    padding-bottom: 1px;
+
+}
+
+.imagen1, .imagen3 {
+    display: none; 
+}
+
+.estadisticas {
+    flex-direction: column;
+    align-items: center;
+}
+
+.proximo_partido h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ultimo_resultado h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.posiciones_portada h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ultimo_resultado {
+    margin-top: -30px;
+}
+
+.posiciones_portada {
+    margin-top: -30px;
+}
+
+
+/* MAIN FÚTBOL */
+
+/* Tabla */
+
+
+th, td {
+    font-size: 12px;
+    padding: 10px;
+}
+
+.tabla_posiciones {
+    max-width: 95%;
+    overflow-x: auto;
+}
+
+.container_resultados {
+    max-width: 95%;
+    overflow-x: auto;
+}
+
+.jugadores1 {
+    flex-direction: column;
+}
+
+.jugadores2 {
+    flex-direction: column;
+    margin-top: -35px;
+}
+
+.jugadores3 {
+    flex-direction: column;
+    margin-top: -35px;
+}
+
+/*Multimedia*/
+
+.videos {
+    margin-top: 50px;
+}
+
+.titulo_videos {
+    margin-left: 480px;
+}
+
+.frames {
+    margin-top: 50px;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.sigma {
+    width: 450px;
+}
+
+.malvinas {
+    width: 450px;
+}
+
+.fotos {
+    margin-top: 50px;
+}
+
+.titulo_fotos {
+    margin-left: 480px;
+}
+
+.multimedia_fotos {
+    grid-template-columns: repeat(1,1fr);
+    margin-inline: 10px;
+    margin-top: 50px;
+    margin-right: 30px;
+}
+
+
+/*MAIN CLUB*/
+
+.historia {
+    padding: 10px;
+}
+    
+.historia h2 {
+    margin-top: 80px;
+}
+
+.historia img {
+    margin-left: 5px;
+    width: 450px;
+}
+
+.autoridades1 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 0px;
+    gap: 50px;
+}
+
+.sedes {
+    padding-inline: 10px;
+}
+
+.sedes1 img {
+    width: 460px;
+}
+
+.imagenes_club {
+    border: none;
+    gap: none;
+}
+
+.club2, .club3 {
+    display: none; 
+}
+
+
+}
+
+
+
+
+
+
+
+}
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
